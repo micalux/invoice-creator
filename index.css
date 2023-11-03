@@ -1,0 +1,177 @@
+/**** COLOURS ****//*
+light blue: #3A69D2
+dark blue: #1F2937
+light grey placeholder: #888888
+light grey: #D5D4D8
+light grey $: #918E9B
+black: #1F2937
+white: #F5F5F5  */
+
+html, body {
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'inter', sans-serif;
+    max-width: 550px;
+    color: #F5F5F5;
+}
+
+header {
+    background-color: #3A69D2;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+
+}
+
+h1 {
+    padding-top: 50px;
+    font-weight: 800;
+    font-size: 40px;
+    margin: 0;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 16px;
+    padding-bottom: 50px;
+}
+
+/* main section */
+
+main {
+    background-color: #1F2937;
+    margin: 0 auto;
+    padding-top: 40px;
+}
+
+.main-container {
+    width: 85%;
+    margin: 0 auto;
+    padding-bottom: 80px;
+}
+
+form {
+    all: inherit;
+}
+
+.task-bar {
+    display: flex;
+    align-content: stretch;
+    width: 100%;
+}
+
+.task-bar input {
+    flex-grow: 0.3;
+    font-size: 20px;
+    padding: 10px 15px;
+    border: none;
+}
+
+.task-bar select {
+    flex-grow: 0.2;
+    font-size: 22px;
+    padding-left: 10px;
+    border: none;
+    background-color: #F0F0F0;
+}
+
+.task-bar i {
+    flex-grow: 0.5;
+    border: none;
+    background-color: #3A69D2;
+    color: #F5F5F5;
+    font-size: 35px;
+    text-align: center;
+    padding:  7px 0;
+    cursor: pointer;
+}
+
+.task-total,
+.task-list,
+.notes-total,
+.payment {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-total h3 {
+    margin-top: 40px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #D5D4D8;
+}
+
+.task-list {
+    margin-top: 15px;
+}
+
+.task-name, .remove-btn, .task-price {
+    margin: 0;
+}
+
+.task-name {
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.remove-btn {
+    font-size: 8px;
+    color: #D5D4D8;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.task-price {
+    margin-left: auto;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.dollar-sign {
+    font-weight: 300;
+    color: #918E9B;
+}
+
+.notes-total {
+    margin-top: 40px;
+    border-top: #D5D4D8 1px solid;
+}
+
+.notes-total h3 {
+    margin-top: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #D5D4D8;
+}
+
+.payment {
+    font-size: 12px;
+    font-weight: 400;
+    color: #D5D4D8;
+}
+
+.total-amount {
+    font-weight: 600;
+    font-size: 36px;
+    margin: 0;
+    color: #F5F5F5
+}
+
+.send-btn {
+    background-color: #3A69D2;
+    margin-top: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    cursor: pointer;
+}
+
+.send-btn p {
+    font-size: 16px;
+    font-weight: 500;
+}
