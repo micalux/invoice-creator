@@ -11,9 +11,12 @@ html, body {
     margin: 0 auto;
     padding: 0;
     font-family: 'inter', sans-serif;
-    max-width: 550px;
+    width: 90%;
+    min-width: 350px;
+    max-width: 800px;
     color: #F5F5F5;
 }
+
 
 header {
     background-color: #3A69D2;
@@ -49,43 +52,42 @@ main {
 .main-container {
     width: 85%;
     margin: 0 auto;
-    padding-bottom: 80px;
-}
-
-form {
-    all: inherit;
+    padding-bottom: 60px;
 }
 
 .task-bar {
     display: flex;
-    align-content: stretch;
     width: 100%;
 }
 
 .task-bar input {
-    flex-grow: 0.3;
     font-size: 20px;
     padding: 10px 15px;
     border: none;
+    width: 50%;
+    flex: 1.2
 }
 
 .task-bar select {
-    flex-grow: 0.2;
     font-size: 22px;
     padding-left: 10px;
     border: none;
     background-color: #F0F0F0;
+    flex: 0
+}
+
+.task-bar button {
+    background-color: #3A69D2;
+    padding:  7px 9px;
+    flex: 0;
+    cursor: pointer;
+    border: none;
 }
 
 .task-bar i {
-    flex-grow: 0.5;
-    border: none;
-    background-color: #3A69D2;
     color: #F5F5F5;
     font-size: 35px;
-    text-align: center;
-    padding:  7px 0;
-    cursor: pointer;
+    text-align: center;  
 }
 
 .task-total,
@@ -98,7 +100,7 @@ form {
 }
 
 .task-total h3 {
-    margin-top: 40px;
+    margin-top: 30px;
     font-size: 12px;
     font-weight: 600;
     color: #D5D4D8;
@@ -115,6 +117,7 @@ form {
 .task-name {
     font-weight: 700;
     font-size: 20px;
+    margin: 0;
 }
 
 .remove-btn {
@@ -134,6 +137,8 @@ form {
     font-weight: 300;
     color: #918E9B;
 }
+
+/* bottom section */
 
 .notes-total {
     margin-top: 40px;
@@ -161,7 +166,11 @@ form {
 }
 
 .send-btn {
+    padding: 17px;
+    font-weight: 500;
+    width: 100%;
     background-color: #3A69D2;
+    color: #F5F5F5;
     margin-top: 50px;
     border-radius: 10px;
     display: flex;
@@ -169,9 +178,5 @@ form {
     justify-content: center;
     gap: 15px;
     cursor: pointer;
-}
-
-.send-btn p {
-    font-size: 16px;
-    font-weight: 500;
+    border: none;
 }

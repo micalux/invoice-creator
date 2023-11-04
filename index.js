@@ -8,28 +8,34 @@ let taskList = []
 
 
 document.addEventListener('click', function (e) {
-    if (e.target.id === 'plus-btn') {
-        addTaskToArray()
-        renderTotalAmount()
-        inputForm.reset()
-    } else if (e.target.id === 'send-btn') {
+    if (e.target.id === 'send-btn') {
         reset()
     } else if (e.target.dataset.remove) {
         removeTask(e.target.dataset.remove)
     }
 })
 
-const addTaskToArray = () => {
-const existingTask = taskList.some(task => task.name === inputTask.value)
+inputForm.addEventListener('submit', function (e) {
+        e.preventDefault()
+        addTaskToArray()
+        renderTotalAmount()
+        inputForm.reset()
+    })
 
-    if (inputTask.value && !existingTask) {
-        taskList.push({
-            name: inputTask.value,
-            cost: selectedCost.value,
-            uuid: uuidv4()
-        })
-    }
-    renderTask()
+
+const addTaskToArray = () => {
+    // checks if element is already in array
+    const taskName = inputTask.value
+    const existingTask = taskList.some(task => task.name === taskName)
+
+        if (taskName && !existingTask) {
+            taskList.push({
+                name: taskName,
+                cost: selectedCost.value,
+                uuid: uuidv4()
+            })
+        }
+        renderTask()
 }
 
 
